@@ -79,7 +79,7 @@ def mergeMetricsAndFormat(outputFileName):
 
     #chattrascript and the first interactions with the initial message of the bot can be removed
     df.drop(labels=['ChatTranscript'],  axis=1,inplace = True)
-    df.drop(labels=['interaction 0'], axis=1, inplace=True)
+    # df.drop(labels=['interaction 0'], axis=1, inplace=True)
 
 
     #filename provided in function call for differnt bots
@@ -114,5 +114,6 @@ def mergeMetricsAndFormat(outputFileName):
 
 
 if __name__ == "__main__":
-    filename = "ITSM_test" #change for each bots.
+    # filename = "SHS_metrics_01-10-25 - 01-21-25" #change for each bots.
+    filename = "Rocky_metrics_01-8-25 - 01-21-25" #change for each bots.
     mergeMetricsAndFormat(filename)
